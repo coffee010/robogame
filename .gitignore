@@ -1,0 +1,58 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build and packaging output
+build/
+dist/
+*.egg-info/
+
+# Local configuration and secrets
+.env
+.env.*
+*.local
+
+# Logs and temporary files
+*.log
+*.tmp
+tmp/
+temp/
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Robot model binaries and generated assets.
+# Keep small metadata files in Git, but store large/versioned model files elsewhere.
+assets/models/*
+!assets/models/.gitkeep
+!assets/models/README.md
+!assets/models/manifest*.json
+*.onnx
+*.pt
+*.pth
+*.tflite
+*.task
+*.pkl
+*.joblib
+
+# Captured runtime media can get large quickly
+captures/
+recordings/
+*.mp4
+*.avi
+*.mov
+*.wav

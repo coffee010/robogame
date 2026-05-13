@@ -1,0 +1,39 @@
+robot:
+  name: "soft_robot"
+  mode: "simulation"
+
+camera:
+  backend: "opencv"
+  width: 640
+  height: 480
+  fps: 30
+
+vision:
+  max_num_hands: 1
+  min_hand_detection_confidence: 0.5
+  min_hand_presence_confidence: 0.5
+  min_tracking_confidence: 0.5
+
+audio:
+  backend: "file"
+  volume: 0.8
+
+display:
+  backend: "pygame"
+  width: 800
+  height: 480
+
+motion:
+  backend: "simulation"
+  servos:
+    head_yaw:
+      channel: 0
+      min_angle: 30
+      max_angle: 150
+      home_angle: 90
+    head_pitch:
+      channel: 1
+      min_angle: 45
+      max_angle: 135
+      home_angle: 90
+

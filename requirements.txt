@@ -1,0 +1,4 @@
+# Windows/local development environment.
+# Install with:
+#   python -m pip install -r requirements.txt
+-e .[dev,ui]

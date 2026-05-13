@@ -1,0 +1,19 @@
+gestures:
+  open_palm:
+    label: "张开手掌"
+    emotion: "happy"
+    sound: "hello.wav"
+    motion: "wave"
+
+  fist:
+    label: "握拳"
+    emotion: "focused"
+    sound: "ok.wav"
+    motion: "stop"
+
+  victory:
+    label: "剪刀手"
+    emotion: "excited"
+    sound: "nice.wav"
+    motion: "nod"
+

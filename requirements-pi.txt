@@ -1,0 +1,10 @@
+# Raspberry Pi runtime environment.
+# Recommended venv command on Raspberry Pi OS:
+#   python3 -m venv --system-site-packages .venv
+#   . .venv/bin/activate
+#   python -m pip install -r requirements-pi.txt
+#
+# Install OS packages first when using the Pi camera stack:
+#   sudo apt update
+#   sudo apt install -y python3-picamera2 libcamera-apps
+-e .[pi,ui,tts]
