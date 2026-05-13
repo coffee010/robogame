@@ -46,6 +46,7 @@ assets/models/*
 *.pth
 *.tflite
 *.task
+!assets/models/gesture_recognizer.task
 *.pkl
 *.joblib
 
