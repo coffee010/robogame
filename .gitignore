@@ -28,6 +28,7 @@ dist/
 *.tmp
 tmp/
 temp/
+.cache/
 
 # Editor and OS files
 .idea/
@@ -41,7 +42,10 @@ assets/models/*
 !assets/models/.gitkeep
 !assets/models/README.md
 !assets/models/manifest*.json
+!assets/models/piper/
+!assets/models/piper/.gitkeep
 *.onnx
+*.onnx.json
 *.pt
 *.pth
 *.tflite
@@ -57,3 +61,6 @@ recordings/
 *.avi
 *.mov
 *.wav
+
+# Piper downloads Chinese phonemizer resources here when --data-dir is not set.
+g2pW/

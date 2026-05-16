@@ -6,5 +6,11 @@
 #
 # Install OS packages first when using the Pi camera stack:
 #   sudo apt update
-#   sudo apt install -y python3-picamera2 libcamera-apps
--e .[pi,ui,tts]
+#   sudo apt install -y python3-picamera2 libcamera-apps alsa-utils
+#
+# Default Pi install: play pre-generated WAV files and run hardware/UI code.
+-e .[pi,ui]
+#
+# Optional: uncomment this if the Pi must generate Chinese Piper speech live.
+# This installs torch and is much larger/slower.
+# -e .[tts-zh]

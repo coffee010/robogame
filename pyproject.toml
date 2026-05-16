@@ -23,7 +23,12 @@ ui = [
   "pygame>=2.5",
 ]
 tts = [
-  "piper-tts>=1.4",
+  "piper-tts>=1.4.2",
+]
+# Chinese Piper voices such as zh_CN-xiao_ya need the zh extra. It pulls in
+# g2pW, torch, unicode-rbnf, sentence-stream, and requests.
+tts-zh = [
+  "piper-tts[zh]>=1.4.2",
 ]
 
 [tool.pytest.ini_options]

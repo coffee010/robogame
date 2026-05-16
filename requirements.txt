@@ -1,4 +1,5 @@
 # Windows/local development environment.
 # Install with:
 #   python -m pip install -r requirements.txt
--e .[dev,ui]
+# Includes Chinese Piper TTS support for voices such as zh_CN-xiao_ya.
+-e .[dev,ui,tts-zh]
