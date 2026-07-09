@@ -1,0 +1,21 @@
+[Unit]
+Description=Robogame human-robot interaction demo
+After=graphical.target
+Wants=graphical.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/robogame
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
+Environment=PYTHON=python3
+# Adjust the project path above if the repo lives somewhere else.
+ExecStart=/home/pi/robogame/scripts/run_robot.sh
+Restart=on-failure
+RestartSec=5
+# Give MediaPipe/Camera some time to come up; long video clips are normal.
+TimeoutStopSec=10
+
+[Install]
+WantedBy=graphical.target

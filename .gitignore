@@ -61,6 +61,12 @@ recordings/
 *.avi
 *.mov
 *.wav
+# Curated voice lines are required at runtime and small enough to keep in Git.
+!assets/sounds/*.wav
+# Expression clips are part of the demo and small enough to keep in Git.
+!assets/expressions/**/*.mp4
+!assets/expressions/**/*.mov
+!assets/expressions/**/*.avi
 
 # Piper downloads Chinese phonemizer resources here when --data-dir is not set.
 g2pW/

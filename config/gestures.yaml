@@ -1,19 +1,42 @@
 gestures:
   open_palm:
     label: "张开手掌"
-    emotion: "happy"
+    expression: "兴奋_2可循环动作"
     sound: "hello.wav"
     motion: "wave"
 
   fist:
     label: "握拳"
-    emotion: "focused"
+    expression: "愤怒_2可循环动作"
     sound: "ok.wav"
     motion: "stop"
 
   victory:
     label: "剪刀手"
-    emotion: "excited"
+    expression: "兴奋_2可循环动作"
     sound: "nice.wav"
     motion: "nod"
 
+  thumb_up:
+    label: "点赞"
+    expression: "兴奋_2可循环动作"
+    sound: "thumbup.wav"
+    motion: "nod"
+
+  thumb_down:
+    label: "踩"
+    expression: "难过_2可循环动作"
+    sound: "thumbdown.wav"
+    motion: "shake"
+
+  iloveyou:
+    label: "我爱你"
+    expression: "兴奋_2可循环动作"
+    sound: "iloveyou.wav"
+    motion: "wave"
+
+  pointing_up:
+    label: "指向上方"
+    expression: "惊恐_2可循环动作"
+    sound: "pointing.wav"
+    motion: "nod"
